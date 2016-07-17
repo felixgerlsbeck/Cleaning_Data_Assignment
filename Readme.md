@@ -2,7 +2,7 @@
 ##UC Irvine Machine Learning Repository
 ##Code for cleaning dataset
 
-run_analysis.R contains code that reads the data into R (the file locations in the read.table commands have to be adapted to the user's specific file location) and then does the following:
+run_analysis.R contains code that reads the data into R, assuming the individual files are all in the working directory:
 
 1. It merges together the test and train datasets into a single dataframe
 2. It sets the numeric variable names to the descriptive variable names used in the Human Activity Recognition Study. Descriptions of the variables are in the accompanying codebook.
