@@ -17,8 +17,11 @@ These signals were used to estimate variables of the feature vector for each pat
 -std() denotes the value is the mean of the standard deviation estimates.
 
 tBodyAcc-XYZ
+
 tGravityAcc-XYZ
+
 tBodyAccJerk-XYZ
+
 tBodyGyro-XYZ
 tBodyGyroJerk-XYZ
 tBodyAccMag
