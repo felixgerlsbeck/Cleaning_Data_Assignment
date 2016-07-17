@@ -1,15 +1,14 @@
-setwd("~/Dropbox/Data_Science/Cleaning_Data_Assignment")
 library(dplyr)
 
-##Read the Data into R
-test <- read.table("~/Dropbox/Data_Science/Cleaning_Data_Assignment/UCI HAR Dataset/test/X_test.txt")
-train <- read.table("~/Dropbox/Data_Science/Cleaning_Data_Assignment/UCI HAR Dataset/train/X_train.txt")
-test_labels <- read.table("~/Dropbox/Data_Science/Cleaning_Data_Assignment/UCI HAR Dataset/test/y_test.txt", sep = " ")
-train_labels <- read.table("~/Dropbox/Data_Science/Cleaning_Data_Assignment/UCI HAR Dataset/train/y_train.txt", sep = " ")
-activity_labels <- read.table("~/Dropbox/Data_Science/Cleaning_Data_Assignment/UCI HAR Dataset/activity_labels.txt", sep = " ")
-features <- read.table("~/Dropbox/Data_Science/Cleaning_Data_Assignment/UCI HAR Dataset/features.txt", sep = " ")
-subject_train <- read.table("~/Dropbox/Data_Science/Cleaning_Data_Assignment/UCI HAR Dataset/train/subject_train.txt", sep = " ")
-subject_test <- read.table("~/Dropbox/Data_Science/Cleaning_Data_Assignment/UCI HAR Dataset/test/subject_test.txt", sep = " ")
+##Read the Data into R. Files must be in Working Directory.
+test <- read.table("X_test.txt")
+train <- read.table("X_train.txt")
+test_labels <- read.table("y_test.txt", sep = " ")
+train_labels <- read.table("y_train.txt", sep = " ")
+activity_labels <- read.table("activity_labels.txt", sep = " ")
+features <- read.table("", sep = " ")
+subject_train <- read.table("subject_train.txt", sep = " ")
+subject_test <- read.table("subject_test.txt", sep = " ")
 
 ##Create Vector of Variable Names
 variable_names <- features[,2]
