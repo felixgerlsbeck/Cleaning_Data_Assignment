@@ -35,5 +35,6 @@ data3$activity <- factor(data3$activity, labels = activity_labels$V2)
 ##Create new dataset with averages of each variable for each subject and activity
 grouped_data <- group_by(data3, subjectID, activity)
 new <- summarize_each(grouped_data, funs(mean))
+write.table(new, file = "Cleaning_Data_Assignment_New.txt", row.names=FALSE)
 
 
