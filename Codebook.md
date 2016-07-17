@@ -1,3 +1,5 @@
+##Codebook for the new dataset created by run_analysis.R
+
 The final data set contains the following variables:
 
 1. subjectID: A unique subject identifier. Integer in the range 1:30
